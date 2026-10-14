@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="top-section">
+            <div class="solar-panel"></div>
+            <div class="screen-container">
+                <div class="memory-indicator" id="memory-indicator"></div>
+                <div class="screen" id="display">0</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn btn-blue" data-action="gt">GT</button>
+            <button class="btn btn-yellow" data-action="mrc">MRC</button>
+            <button class="btn btn-yellow" data-action="m-">M-</button>
+            <button class="btn btn-yellow" data-action="m+">M+</button>
+            <button class="btn btn-yellow" data-action="toggle-sign">+/-</button>
+            
+            <!-- Row 2 -->
+            <button class="btn btn-green" data-action="backspace">→</button>
+            <button class="btn btn-blue" data-value="7">7</button>
+            <button class="btn btn-blue" data-value="8">8</button>
+            <button class="btn btn-blue" data-value="9">9</button>
+            <button class="btn btn-blue" data-operator="/">÷</button>
+            
+            <!-- Row 3 -->
+            <button class="btn btn-purple" data-action="ce">CE</button>
+            <button class="btn btn-green" data-value="4">4</button>
+            <button class="btn btn-green" data-value="5">5</button>
+            <button class="btn btn-green" data-value="6">6</button>
+            <button class="btn btn-green" data-operator="*">×</button>
+            
+            <!-- Row 4 -->
+            <button class="btn btn-purple" data-action="ac">AC</button>
+            <button class="btn btn-pink" data-value="1">1</button>
+            <button class="btn btn-pink" data-value="2">2</button>
+            <button class="btn btn-pink" data-value="3">3</button>
+            <button class="btn btn-pink" data-operator="-">-</button>
+            
+            <!-- Row 5 -->
+            <button class="btn btn-purple" data-value="0">0</button>
+            <button class="btn btn-purple" data-value="00">00</button>
+            <button class="btn btn-purple" data-value=".">.</button>
+            <button class="btn btn-purple" data-operator="+">+</button>
+            <button class="btn btn-purple btn-eq" data-action="calculate">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
