@@ -14,7 +14,7 @@ pipeline {
 
     environment {
         // Replace this with your Docker Hub username/repository before the first run.
-        IMAGE_REPO = 'REPLACE_WITH_DOCKERHUB_USERNAME/pastel-calculator'
+        IMAGE_REPO = 'veddangat/pastel-calculator'
     }
 
     stages {
