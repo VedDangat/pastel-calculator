@@ -1,0 +1,8 @@
+# Keep credentials and private keys out of GitHub.
+*.pem
+.env
+.env.*
+!.env.example
+
+# Large local demo recordings are not part of the application source.
+*.mp4

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pastel-calculator
+  labels:
+    app: pastel-calculator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pastel-calculator
+  template:
+    metadata:
+      labels:
+        app: pastel-calculator
+    spec:
+      containers:
+        - name: web
+          image: __IMAGE__
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
